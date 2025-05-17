@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
 export default function FeatureCard(props: {

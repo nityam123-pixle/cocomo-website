@@ -66,7 +66,7 @@ export default function Hero() {
                 { duration: 0.5 },
             ],
         ]);
-    }, []);
+    });
 
     return (
         <section

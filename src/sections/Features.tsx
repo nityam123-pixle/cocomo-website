@@ -26,13 +26,12 @@ export default function Features() {
     const tagRef = useRef(null);
     const isTagInView = useInView(tagRef, { once: true, margin: "-50px" });
 
-    const cardRefs = Array(3)
-        .fill(null)
-        .map(() => useRef(null));
-
-    const cardInViews = cardRefs.map((ref) =>
-        useInView(ref, { once: true, margin: "-100px" })
-    );
+    const cardRefs = [useRef(null), useRef(null), useRef(null)];
+    const cardInViews = [
+        useInView(cardRefs[0], { once: true, margin: "-100px" }),
+        useInView(cardRefs[1], { once: true, margin: "-100px" }),
+        useInView(cardRefs[2], { once: true, margin: "-100px" }),
+    ];
 
     const featuresRef = useRef(null);
     const featuresInView = useInView(featuresRef, {
