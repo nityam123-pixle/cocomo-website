@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     title: "Cocomo Media",
-    description: "Created with the help of Frontend Tribe",
+    description: "COCOMO MEDIA",
 };
 
 export default function RootLayout({
